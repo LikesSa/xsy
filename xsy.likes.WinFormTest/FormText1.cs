@@ -22,7 +22,6 @@ namespace xsy.likes.WinFormTest
 
         private void button_tokeGet_Click(object sender, EventArgs e)
         {
-            
         }
 
         private void button_text_Click(object sender, EventArgs e)
@@ -30,23 +29,18 @@ namespace xsy.likes.WinFormTest
             //mydata md = new mydata();
             //jd.xiugai();
             //cedata cd = new cedata();
-            AdwData rd = new AdwData();
+            //AdwData rd = new AdwData();
             //JvData jd = new JvData();
             //jd.deliveryorderGetNew();
-            rd.CustomerBackAllTotwo();
-
+            //rd.CustomerBackAllTotwo();
 
             //textBox_show.Text = rd.infoShow();
-
-
-
-
         }
 
         private void button_mm_Click(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;
-            int days = DateTime.DaysInMonth(dt.Year,2);
+            int days = DateTime.DaysInMonth(dt.Year, 2);
             textBox_show.Text = days.ToString();
             //int days1 = DateTime.DaysInMonth(2012, 2);
             //textBox_show.Text += "kk" + days1.ToString();
@@ -54,9 +48,7 @@ namespace xsy.likes.WinFormTest
 
         private void FormText1_Load(object sender, EventArgs e)
         {
-
         }
-
 
         private JvData jd = new JvData();       //通用接口操作类
         private IDbOperate db = new DbOperate();         //数据库连接
@@ -67,7 +59,6 @@ namespace xsy.likes.WinFormTest
         {
             button1.Enabled = false;
             t1.Interval = Convert.ToDouble(t1) * 60 * 1000; //设置时间间隔为time1 分
-
 
             t1.Elapsed += T1_Elapsed;
             t1.AutoReset = true;
@@ -107,7 +98,6 @@ namespace xsy.likes.WinFormTest
             IDbOperate dbt = new DbOperate();         //数据库连接
             try
             {
-
                 string result = string.Empty;
                 bool fa = dbt.TestConnection(out result);
                 if (fa)
@@ -117,9 +107,7 @@ namespace xsy.likes.WinFormTest
                 else
                 {
                     MessageBox.Show("连接失败，请检查数据库配置！" + result);
-
                 }
-
             }
             catch (Exception ex)
             {
@@ -137,9 +125,7 @@ namespace xsy.likes.WinFormTest
             cc = jd.inText();
             if (string.IsNullOrEmpty(cc) || cc.Equals("77888"))
             {
-
                 MessageBox.Show("接口未连接，请检查网络和配置文件！");
-
             }
             else
             {
