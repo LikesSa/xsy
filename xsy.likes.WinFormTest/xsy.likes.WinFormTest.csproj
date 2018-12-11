@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55E350A8-8AAB-4F2E-813D-E12F5887DBCA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>xsy.likes.WinFormTest</RootNamespace>
+    <AssemblyName>xsy.likes.WinFormTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin">
+      <HintPath>..\package\Skin\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\package\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAdw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdw.Designer.cs">
+      <DependentUpon>FormAdw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formnuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formnuc.Designer.cs">
+      <DependentUpon>Formnuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPub.Designer.cs">
+      <DependentUpon>FormPub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormText1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormText1.Designer.cs">
+      <DependentUpon>FormText1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdw.resx">
+      <DependentUpon>FormAdw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formnuc.resx">
+      <DependentUpon>Formnuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPub.resx">
+      <DependentUpon>FormPub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormText1.resx">
+      <DependentUpon>FormText1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\csapi\csapi.csproj">
+      <Project>{bf75f6d1-81b6-4002-bd80-1a0a694e7517}</Project>
+      <Name>csapi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xsy.jvif\xsy.jvif.csproj">
+      <Project>{6c0ab3a8-e7b4-4f7d-8d32-1dfaee394e68}</Project>
+      <Name>xsy.jvif</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xsy.likes.Base\xsy.likes.Base.csproj">
+      <Project>{a91486ad-6d3b-423c-9225-a24780a2af15}</Project>
+      <Name>xsy.likes.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xsy.likes.DB\xsy.likes.DB.csproj">
+      <Project>{27b2cbd6-12f5-48b6-b73a-acde9c20598f}</Project>
+      <Name>xsy.likes.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xsy.likes.Log\xsy.likes.Log.csproj">
+      <Project>{38f47606-069f-41f3-b3b9-158f8a0c3f92}</Project>
+      <Name>xsy.likes.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xsy.likes.myif\xsy.likes.myif.csproj">
+      <Project>{8919869f-5afd-47ba-9f13-98cfbad4031c}</Project>
+      <Name>xsy.likes.myif</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xsy.likes.pwmd\xsy.likes.pwmd.csproj">
+      <Project>{06B1F2F8-76F4-45AE-97F2-CFCAA91B84EB}</Project>
+      <Name>xsy.likes.pwmd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XsyAdw\XsyAdw.csproj">
+      <Project>{e43267a1-35b6-4597-9dac-452ffdd0dbc1}</Project>
+      <Name>XsyAdw</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XsyRlx\XsyRlx.csproj">
+      <Project>{d33ac5c4-9262-4f08-8fcf-6af2a9f9560d}</Project>
+      <Name>XsyRlx</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

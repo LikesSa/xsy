@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GetTokenReturn>
+  <id></id>
+  <access_token></access_token>
+  <issued_at></issued_at>
+  <token_type></token_type>
+  <refresh_token></refresh_token>
+</GetTokenReturn>

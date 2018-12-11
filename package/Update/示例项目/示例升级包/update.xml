@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<UpdateInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AppName>升级示例项目</AppName>
+  <AppVersion>2.0.0.0</AppVersion>
+  <PublishUrl>http://www.fishlee.net/</PublishUrl>
+  <FileExecuteBefore>安装前执行.cmd</FileExecuteBefore>
+  <ExecuteArgumentBefore />
+  <FileExecuteAfter>安装后执行.cmd</FileExecuteAfter>
+  <ExecuteArgumentAfter />
+  <ExecuteTimeout>10</ExecuteTimeout>
+  <Desc>测试项目.</Desc>
+  <Package>8723e306-d3dc-4fbe-b255-7eca59f0b418.zip</Package>
+  <MD5>7E483564EC747E066021ADD8F1BC94B8</MD5>
+  <DeleteFileLimits>
+    <string>.*保留.*</string>
+    <string>SimpleUpdater.*</string>
+    <string>! 双击启动更新.cmd</string>
+  </DeleteFileLimits>
+  <DeleteMethod>AllExceptSpecified</DeleteMethod>
+  <RequiredMinVersion />
+  <PackageSize>1169</PackageSize>
+  <PackagePassword />
+  <ForceUpdate>false</ForceUpdate>
+  <ForceKillProcesses>false</ForceKillProcesses>
+  <Packages>
+    <PackageInfo>
+      <FilePath />
+      <FileSize>0</FileSize>
+      <Version>0.0.0.0</Version>
+      <PackageHash>87C12621D30B42E1CA7A3A73BFFCFD3E</PackageHash>
+      <PackageName>99cf4fc3-bfcf-4665-8e7b-4845075bd2f4.zip</PackageName>
+      <PackageSize>619</PackageSize>
+      <Method>Always</Method>
+      <VerificationLevel>None</VerificationLevel>
+      <FileHash />
+      <Files>
+        <string>安装前执行.cmd</string>
+        <string>安装后执行.cmd</string>
+      </Files>
+    </PackageInfo>
+    <PackageInfo>
+      <FilePath>新安装的文件1.txt</FilePath>
+      <FileSize>0</FileSize>
+      <Version>0.0.0.0</Version>
+      <PackageHash>9124EC469507007B887B2326B44F32F7</PackageHash>
+      <PackageName>962601dd-4c17-4c15-ac83-3bf35ca8df60.zip</PackageName>
+      <PackageSize>132</PackageSize>
+      <Method>VersionCompare</Method>
+      <VerificationLevel>Size Hash</VerificationLevel>
+      <FileHash>D41D8CD98F00B204E9800998ECF8427E</FileHash>
+      <Files>
+        <string>新安装的文件1.txt</string>
+      </Files>
+    </PackageInfo>
+    <PackageInfo>
+      <FilePath>新安装的文件2.txt</FilePath>
+      <FileSize>0</FileSize>
+      <Version>0.0.0.0</Version>
+      <PackageHash>16DB16DFEE7E75DA2224B9F5905582C3</PackageHash>
+      <PackageName>1c1191b8-e73c-4b38-944f-e1c851f105b1.zip</PackageName>
+      <PackageSize>132</PackageSize>
+      <Method>VersionCompare</Method>
+      <VerificationLevel>Size Hash</VerificationLevel>
+      <FileHash>D41D8CD98F00B204E9800998ECF8427E</FileHash>
+      <Files>
+        <string>新安装的文件2.txt</string>
+      </Files>
+    </PackageInfo>
+    <PackageInfo>
+      <FilePath>新安装的文件3.txt</FilePath>
+      <FileSize>0</FileSize>
+      <Version>0.0.0.0</Version>
+      <PackageHash>91C4491135C85C3DD6E7E9BAEB24A07E</PackageHash>
+      <PackageName>e8748cad-5184-4340-ad65-da0fbaeead3f.zip</PackageName>
+      <PackageSize>132</PackageSize>
+      <Method>VersionCompare</Method>
+      <VerificationLevel>Size Hash</VerificationLevel>
+      <FileHash>D41D8CD98F00B204E9800998ECF8427E</FileHash>
+      <Files>
+        <string>新安装的文件3.txt</string>
+      </Files>
+    </PackageInfo>
+    <PackageInfo>
+      <FilePath>新安装的文件4.txt</FilePath>
+      <FileSize>0</FileSize>
+      <Version>0.0.0.0</Version>
+      <PackageHash>B9DFC771F4B06C296C68DA6B11ACC49D</PackageHash>
+      <PackageName>0c0156a3-40ad-4216-b7bf-748bbd2dadf7.zip</PackageName>
+      <PackageSize>132</PackageSize>
+      <Method>VersionCompare</Method>
+      <VerificationLevel>Size Hash</VerificationLevel>
+      <FileHash>D41D8CD98F00B204E9800998ECF8427E</FileHash>
+      <Files>
+        <string>新安装的文件4.txt</string>
+      </Files>
+    </PackageInfo>
+    <PackageInfo>
+      <FilePath>新安装的文件5.txt</FilePath>
+      <FileSize>0</FileSize>
+      <Version>0.0.0.0</Version>
+      <PackageHash>5AA0D241CE33DC858BFEE1600962D391</PackageHash>
+      <PackageName>81ea568f-8003-4151-8b93-a122ddd01e5f.zip</PackageName>
+      <PackageSize>132</PackageSize>
+      <Method>VersionCompare</Method>
+      <VerificationLevel>Size Hash</VerificationLevel>
+      <FileHash>D41D8CD98F00B204E9800998ECF8427E</FileHash>
+      <Files>
+        <string>新安装的文件5.txt</string>
+      </Files>
+    </PackageInfo>
+  </Packages>
+  <HideBeforeExecuteWindow>false</HideBeforeExecuteWindow>
+  <HideAfterExecuteWindow>false</HideAfterExecuteWindow>
+</UpdateInfo>
