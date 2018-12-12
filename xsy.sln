@@ -1,8 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADW.Protal.WindowsService", "ADW.Protal.WindowsService\ADW.Protal.WindowsService.csproj", "{1501FA52-0A53-4818-8570-BBCF1EED77CA}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xsy.likes.Base", "xsy.likes.Base\xsy.likes.Base.csproj", "{A91486AD-6D3B-423C-9225-A24780A2AF15}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xsy.likes.DB", "xsy.likes.DB\xsy.likes.DB.csproj", "{27B2CBD6-12F5-48B6-B73A-ACDE9C20598F}"
@@ -33,6 +35,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1501FA52-0A53-4818-8570-BBCF1EED77CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1501FA52-0A53-4818-8570-BBCF1EED77CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1501FA52-0A53-4818-8570-BBCF1EED77CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1501FA52-0A53-4818-8570-BBCF1EED77CA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A91486AD-6D3B-423C-9225-A24780A2AF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A91486AD-6D3B-423C-9225-A24780A2AF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A91486AD-6D3B-423C-9225-A24780A2AF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -84,5 +90,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE773C99-4FCB-4F35-8CF0-A39DD897A1BD}
 	EndGlobalSection
 EndGlobal
